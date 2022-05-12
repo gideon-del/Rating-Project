@@ -14,12 +14,11 @@
     <link rel="stylesheet" href="./style/style.css" type="text/css" />
     <!-- <link rel="stylesheet" href="./style/normal.css" type = "text/css"/> -->
     <title>Frontend Mentor | Interactive rating component</title>
-    <script src="index.js"></script>
   </head>
   <body id="body">
     <!-- Rating state start -->
     <div id="container" class="flex">
-      <section class="card grid pd2 pd4">
+      <section class="card grid pd2 pd4 section1">
         <div class="flex mg-center height">
           <img
             src="./images/icon-star.svg"
@@ -31,25 +30,29 @@
             Please let us know how we did with your support request. All
             feedback is appreciated to help us improve our offering!
           </p>
-          <ul class="flex flex__row">
-            <li class="circle">1</li>
-            <li class="circle">2</li>
-            <li class="circle">3</li>
-            <li class="circle">4</li>
-            <li class="circle">5</li>
-          </ul>
-          <button class="btn mg1">Submit</button>
+          <div class="flex flex__row">
+            <button class="circle t-center pd3" value="1">1</button>
+            <button class="circle t-center pd3" value="2">2</button>
+            <button class="circle t-center pd3" value="3">3</button>
+            <button class="circle t-center pd3" value="4">4</button>
+            <button class="circle t-center pd3" value="5">5</button>
+          </div>
+          <button class="btn mg1" id="btn-click">Submit</button>
         </div>
       </section>
       <!-- Rating state end -->
 
       <!-- Thank you state start -->
-      <section class="display">
-        You selected
-        <!-- Add rating here -->
-        out of 5 Thank you! We appreciate you taking the time to give a rating.
-        If you ever need more support, don’t hesitate to get in touch!
-
+      <section class="display card pd2 pd4 section2">
+        <img src="./images/illustration-thank-you.svg" />
+        <p class="btn__p pd1 mg-center t-center replace">
+          You selected out of 5
+        </p>
+        <h1 class="t-center">Thank you!</h1>
+        <p class="t-center">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
         <!-- Thank you state end -->
       </section>
     </div>

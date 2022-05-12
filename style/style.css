@@ -1,4 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+.t-center {
+  text-align: center;
+}
+
+.t-left {
+  text-align: start;
+}
+
+.t-right {
+  text-align: end;
+}
+
 .mg1 {
   margin-top: 10px;
 }
@@ -73,11 +85,12 @@ a:visited {
 button {
   outline: none;
   border: none;
+  color: hsl(217deg, 12%, 63%);
 }
 
 p {
   line-height: 1.2;
-  font: size 15px;
+  font-size: 1rem;
   color: hsl(217deg, 12%, 63%);
 }
 
@@ -117,6 +130,16 @@ body {
   background-color: hsl(0deg, 0%, 100%);
   color: hsl(25deg, 97%, 53%);
 }
+.btn__p {
+  width: 50%;
+  height: 40px;
+  border-radius: 25px;
+  background-color: hsl(213deg, 19%, 18%);
+  color: hsl(25deg, 97%, 53%);
+}
+.btn__clicked {
+  background-color: hsl(25deg, 97%, 53%);
+}
 
 .flex {
   display: flex;
@@ -136,8 +159,8 @@ body {
 }
 
 .card {
-  width: 400px;
-  height: 400px;
+  width: 25rem;
+  height: 25rem;
   border: none;
   border-radius: 15px;
   background-color: hsl(216deg, 12%, 8%);
@@ -160,6 +183,25 @@ body {
 }
 .circle:hover {
   background-color: hsl(217deg, 12%, 63%);
+}
+.circle:focus {
+  background-color: hsl(25deg, 97%, 53%);
+}
+
+@media only screen and (max-width: 425px) {
+  .card {
+    height: 25rem;
+    max-width: 18rem;
+  }
+
+  .circle {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .btn__p {
+    width: 75%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
